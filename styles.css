@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    margin-left: -3px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* preserve-3d we used to preserve the 3d effect of website if it is not used then website will remain in 2d only then
+    we will not able to create parallax effect. */
+    z-index: -1;
+    /* z-index = negative means that box or container should remain at backside ;
+        positive means that box or container should ramain at frontside;
+    that is more the value of z-index that box will remain at front. */
+    
+
+}
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    position: absolute;
+    z-index: 105px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-20px) scale(3);
+
+}
+h1{
+    color: rgb(239, 231, 231);
+    position: absolute;
+    top:5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    text-shadow: 0 0 10px rgba(0,0,0.3);
+    letter-spacing: 4px;
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+    margin-top: 25px;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    top: 50%;
+    left: 60%;
+    transform: translateX(-50%) translateX(-50%);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 70px;
+}
+.bg1{
+    background-image: url(biking.jpeg) ;
+}
+.bg2{
+    background-image: url(ssss.jpg);
+
+}
+.bg3{
+    background-image: url(paragliding.jpg);
+}
+.bg4{
+    background-image: url(bungy.jpg);
+}
+.bg5{
+    background-image: url(horse.jpg);
+}
+.bg6{
+    background-image: url(bananaride.jpg);
+}
+.bg7{
+    background-image: url(bumpy.jpg);
+    
+}
+.button{
+    background-color: rgb(238, 235, 231);
+    margin-left: 700px;
+    font-size: 40px;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+.button:hover{
+    background-color:rgb(175, 231, 176);
+    cursor: pointer;
+    border: 1px solid black;
+}
+p:hover{
+    color:rgb(228, 211, 179);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

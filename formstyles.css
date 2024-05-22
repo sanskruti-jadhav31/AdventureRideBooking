@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+
+}
+.container{
+    width: 1516px;
+    height: 709px;
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 75, 123);
+    /* background: linear-gradient( to right ,rgb(206, 64, 64),rgb(237, 83, 83),rgb(64, 64, 221),blue); */
+    padding: 10px;
+    /* border: 3px solid black; */
+}
+.box{
+    width: 1450px;
+    height: 650px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+    
+}
+.box1{
+    background-image: url(form1.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+h1{
+    position: absolute;
+    font-size: 90px;
+    margin-left: 150px;
+    margin-top: 80px;
+    color: rgb(231, 222, 222);
+    
+}
+h4{
+    position: absolute;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: 80px;
+    color: rgb(231, 222, 222);
+    
+}
+.box2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h2{
+    position: absolute;
+    margin: 200px;
+    margin-top: -230px;
+
+    font-size: 40px;
+
+}
+form{
+    padding: 50px;
+    margin-top: 118px;
+
+}
+.abx{
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+}
+label{
+    font-size: 18px;
+}
+.button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 90px;
+    font-size: 15px;
+    background-color: black;
+    color: azure;
+}
+.button:hover{
+    background-color: rgb(243, 239, 233);
+    color: black;
+}
+
